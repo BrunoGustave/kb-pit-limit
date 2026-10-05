@@ -1,5 +1,5 @@
-const CACHE = 'kbpit-muvht2og';
-const FILES = ["./","./apple-touch-icon.png","./assets/compute.worker-U1J1PA-j.js","./assets/index-BZobutY-.css","./assets/index-DJCbmacV.js","./assets/web-BbOkbM_H.js","./assets/web-BDSkR-zl.js","./assets/web-pSxNhl6B.js","./avatar.png","./favicon.png","./icon-192.png","./icon-512.png","./icon.svg","./index.html","./manifest.webmanifest"];
+const CACHE = 'kbpit-muvi3x7e';
+const FILES = ["./","./apple-touch-icon.png","./assets/compute.worker-U1J1PA-j.js","./assets/index-BBb-beid.js","./assets/index-BZobutY-.css","./assets/web-BJb5Cefg.js","./assets/web-TfA49q5h.js","./assets/web-XO5IANDV.js","./avatar.png","./favicon.png","./icon-192.png","./icon-512.png","./icon.svg","./index.html","./manifest.webmanifest"];
 self.addEventListener('install', (e) => { e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES.map((f) => new Request(f, { cache: 'reload' })))).then(() => self.skipWaiting())); });
 self.addEventListener('activate', (e) => { e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => k !== CACHE).map((k) => caches.delete(k)))).then(() => self.clients.claim())); });
 self.addEventListener('fetch', (e) => {
